@@ -1,0 +1,12 @@
+  <tr> 
+    <td><%= product.product %></td>
+    <td><%= product.slno %></td>
+    <td><%= product.model %></td>
+    <td><%= product.capacity %></td>
+    <td><%= display_date(product.datepurchased) %></td>
+    <td><%= product.warranty %></td>
+    <td><%= product.remark %></td>
+    <td><%= link_to 'Edit', [:edit, @consumer, product] %></td>
+    <td><%= link_to 'Remove', consumer_product_path(@consumer, product),
+    :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>

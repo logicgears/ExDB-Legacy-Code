@@ -1,0 +1,34 @@
+<% form_for([@consumer, @product]) do |f| %>
+
+  <p>
+    <%= f.label :Product %><br />
+    <%= f.text_field :product %>
+  </p>
+  <p>
+    <%= f.label :Serial_no %><br />
+    <%= f.text_field :slno %>
+  </p>
+  <p>
+    <%= f.label :Model %><br />
+    <%= f.text_field :model %>
+  </p>
+  <p>
+    <%= f.label :Capacity %><br />
+    <%= f.text_field :capacity %>
+  </p>
+  <p>
+    <%= f.label :Date_Purchased %><br />
+    <%= f.date_select :datepurchased %>
+  </p>
+  <p>
+    <%= f.label :warranty %><br />
+    <%= f.text_field :warranty %>
+  </p>
+  <p>
+    <%= f.label :Remark %><br />
+    <%= f.text_area :remark, "rows" => 2, "cols" => 23 %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>

@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  product: MyString
+  slno: MyString
+  model: MyString
+  capacity: MyString
+  datepurchased: 2010-05-27 15:17:25
+  warranty: 1
+  remark: MyText
+  consumer_id: 1
+
+two:
+  product: MyString
+  slno: MyString
+  model: MyString
+  capacity: MyString
+  datepurchased: 2010-05-27 15:17:25
+  warranty: 1
+  remark: MyText
+  consumer_id: 1

@@ -1,0 +1,20 @@
+<div align="right"><%= link_to 'New Customer', new_consumer_path %></align></div>
+<b>Customers List</b>
+
+<br><br> Search: 
+
+<%= text_field_with_auto_complete :consumer, :name, { :size => 15 }, { :url => consumers_path(:js), :method => :get, :after_update_element => "function(element,value) {window.location.href = '/consumers/'+value.id }", :with => "'search='+element.value" } %>
+
+<!-- %= text_field_with_auto_complete :consumer, :name, { :size => 15 }, { :url => consumers_path(:js), :method => :get, :with => "'search='+element.value" } % -->
+
+<hr>
+<ul class="consumers">
+  <%= render :partial => "consumer",
+             :collection => @consumers %>
+</ul>
+
+<hr>
+
+<%= link_to 'New consumer', new_consumer_path %>
+
+
